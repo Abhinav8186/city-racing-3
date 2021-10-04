@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>City Racing</title>
+  <link rel="icon" href="NAME.png" type="image/png" sizes="16x16">
+
+  <style>
+    body {
+      background-image: url("bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: rgb(255, 255, 255);
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+
+    button {
+      background-color: violet;
+      margin-top: 400px;
+      margin-left: 700px;
+      font-family: agency FB;
+      letter-spacing: 2px;
+    }
+
+    button:active {
+      background-color: #000;
+      color: violet
+    }
+  </style>
+</head>
+
+<body onclick="gfg_Run()" onmousedown="return false" onselectstart="return false">
+
+
+
+  <center>
+    <a href="level.html"><button style="height:80px; width:250px; font-size: 50px;">PLAY</button></a>
+  </center>
+  <button style="width: 120px; height: 50px; font-size: large; margin-top: 50px;"
+    onclick="document.getElementById('id01').style.display='block'" style="width:auto;">About the Game</button>
+  <a href="aboutme.html" style="background-color: greenyellow; border-style: inset;">&#128712 Info</a>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <center>
+          <h1>Welcome Dear Racer,</h1>
+        </center>
+        <hr>
+        <h2 style="text-align: center;">Welcome To City Racing.</h2>
+
+
+        <ul style="font-size: larger;">
+          <li style="margin-left: 500px;">The neon track.</li>
+          <li style="margin-left: 500px;">The Haunted track.</li>
+          <li style="margin-left: 500px;">Ghost AI. You will not be able to collide with it.</li>
+          <li style="margin-left: 500px;">Press space bar for horn.</li>
+        </ul>
+
+        <h2 style="text-align: center;">Use these arrow keys (⬅ ⬆ ➡)</h2>
+        <h2 style="text-align: center;">It's an infinite runner game. </h2>
+
+      </div>
+      <script>
+        document.addEventListener('contextmenu', event => event.preventDefault(alert("PLEASE DON'T INSPECT THE APPLICATION WE DON'T LIKE IT.")));
+      </script>
+      <audio loop autoplay>
+        <source src="song1.mp3" type="audio/mp3">
+      </audio>
+
+
+
+</body>
+
+</html>

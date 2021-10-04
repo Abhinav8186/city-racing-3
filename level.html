@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>City Racing</title>
+  <link rel="icon" href="NAME.png" type="image/png" sizes="16x16">
+
+  <style>
+    body {
+      background-image: url("bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    button {
+      background-color: rgb(43, 255, 0);
+      height: 80px;
+      width: 200px;
+      font-size: 300%;
+    }
+
+    button {
+      background-color: violet;
+      font-family: Agency FB;
+      letter-spacing: 2PX;
+    }
+
+    button:active {
+      background-color: #000;
+      color: violet
+    }
+
+    table,
+    th,
+    td {
+      border-style: inset;
+
+    }
+  </style>
+</head>
+
+<body onclick="gfg_Run()" onmousedown="return false" onselectstart="return false">
+
+  <center>
+    <img src="NAME.png" style="width: 180px;" alt="png">
+  </center>
+  <a href="index.html"><button style="width: 120px;height: 70px;">&laquo;</button></a>
+ <!-- <a href="#"><button style="width: 1000px;height: 70px;"> CLICK HERE TO JOIN INSTANT MULTIPLAYER.</button></a>-->
+
+ <audio loop autoplay>
+  <source src="song1.mp3" type="audio/mp3">
+</audio>
+
+
+  <center>
+    <h2 style="font-size: 95%;background-color: aliceblue;">Please read the instructions if you are facing difficulty.
+    </h2>
+  </center>
+
+  <table>
+    <tr>
+      <th><a href="DESERT/index.html"><img src="download.png" id="desert" width="90%"></a>
+      </th>
+      <th> <a href="CITY/index.html"><img src="city.png" width="90%"></a>
+      </th>
+      <th> <a href="ICE/index.html"><img src="ice.png" width="90%"></a>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p style="text-align: center; background-color: aliceblue;"><label><b>Drive in Neon Road</b></label></p>
+      </td>
+      <td>
+        <p style="text-align: center; background-color: aliceblue;"><label><b>Drive in haunted road.</b></label></p>
+      </td>
+      <td>
+        <p style="text-align: center; background-color: aliceblue;"><label><b>Drive on ice</b></label></p>
+      </td>
+    </tr>
+  </table>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault(alert("PLEASE DON'T INSPECT THE APPLICATION WE DON'T LIKE IT.")));
+
+  </script>
+
+</body>
+
+</html>
